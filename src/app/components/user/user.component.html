@@ -1,0 +1,20 @@
+<div class="wrapper">
+    <div class="header">
+        <h1>Bruno Mars</h1>
+    </div>
+    <div class="dropdown">
+        <dropdown 
+            *ngIf="albumsKeys"
+            [options]="albumsKeys" 
+            [selectedElement]="selectedAlbum"
+            [type]="'selectedAlbum'"
+            (selectedElementChange)="onSelectedElementChange($event)">
+        </dropdown>
+    </div>
+        
+    <div class="album-details" *ngIf="albums && selectedAlbum && albums[selectedAlbum]">
+        <img class="cover-photo" src="{{albums[selectedAlbum]?.coverPhoto}}">
+        <p class="name">{{selectedAlbum}}</p>
+        <p class="release-date">Released on {{albums[selectedAlbum]?.releaseDate}}</p>
+    </div>
+</div>

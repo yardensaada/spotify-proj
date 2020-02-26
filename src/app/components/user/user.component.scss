@@ -1,0 +1,58 @@
+.wrapper {
+    text-align: center;
+
+    .header {
+        h1 {
+            font-size: 72px;
+            line-height: 300px;
+            letter-spacing: -.005em;
+            font-weight: 800;
+            color: #fff;
+            text-transform: none;
+            font-family: spotify-circular,spotify-circular-cyrillic,spotify-circular-arabic,spotify-circular-hebrew,Helvetica Neue,Helvetica,Arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif;
+        }
+        background-image: url("https://i.scdn.co/image/70fafc0ebfbbd6635ad539892fb96f4e1682963b");
+        position: relative;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-size: cover;
+        background-position: 50%;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background: linear-gradient(transparent -5%,#121212);
+        }
+    }
+
+    .dropdown {
+        margin: 30px;
+    }
+    
+    .album-details {
+        .cover-photo {
+            height: 300px;
+            width: 300px;
+            border: 1px;
+            border-radius: 50%;
+            padding: 7px;
+            border: 2px solid rgb(28, 185, 83);
+        }
+
+        .name {
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: -.005em;
+            text-transform: none;
+        }
+
+        .release-date {
+            font-size: 14px;
+        }
+    }
+}
